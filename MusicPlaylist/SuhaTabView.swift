@@ -90,12 +90,12 @@ struct SuhaTabView: View {
                             .listRowSeparatorTint(.white)
                             }
                             .listRowBackground(Color(.gray))
-                            //리스트 백그라운드 색 지정 이미지도 지정가능
+                            //리스트 raw 백그라운드 색 지정 이미지도 가능
                         }
                     }
                       .scrollContentBackground(.hidden)
-                      .background(Color("BackgroundColor").ignoresSafeArea(.all))
-                      .listStyle(.inset)
+                      .background(Color("BackgroundColor").ignoresSafeArea(.all)) //리스트 백그라운드 색 지정 이미지도 가능
+                      .listStyle(.inset) // 리스트 스타일 변경 inset, automatic, plan 등 다양하게 존재.
                 }
             }
         }

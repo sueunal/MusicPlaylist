@@ -15,6 +15,7 @@
 		2CE878D229AF68C40078E233 /* MusicPlaylistUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE878D129AF68C40078E233 /* MusicPlaylistUITests.swift */; };
 		2CE878D429AF68C40078E233 /* MusicPlaylistUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE878D329AF68C40078E233 /* MusicPlaylistUITestsLaunchTests.swift */; };
 		2CE878E129B093350078E233 /* SuhaTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE878E029B093350078E233 /* SuhaTabView.swift */; };
+		2CE878E329B4E31B0078E233 /* MusicPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE878E229B4E31B0078E233 /* MusicPlayView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		2CE878D129AF68C40078E233 /* MusicPlaylistUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlaylistUITests.swift; sourceTree = "<group>"; };
 		2CE878D329AF68C40078E233 /* MusicPlaylistUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlaylistUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		2CE878E029B093350078E233 /* SuhaTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuhaTabView.swift; sourceTree = "<group>"; };
+		2CE878E229B4E31B0078E233 /* MusicPlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				2CE878B629AF68C30078E233 /* MusicPlaylistApp.swift */,
 				2CE878B829AF68C30078E233 /* ContentView.swift */,
 				2CE878E029B093350078E233 /* SuhaTabView.swift */,
+				2CE878E229B4E31B0078E233 /* MusicPlayView.swift */,
 				2CE878BA29AF68C40078E233 /* Assets.xcassets */,
 				2CE878BC29AF68C40078E233 /* Preview Content */,
 			);
@@ -260,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CE878E329B4E31B0078E233 /* MusicPlayView.swift in Sources */,
 				2CE878B929AF68C30078E233 /* ContentView.swift in Sources */,
 				2CE878B729AF68C30078E233 /* MusicPlaylistApp.swift in Sources */,
 				2CE878E129B093350078E233 /* SuhaTabView.swift in Sources */,
