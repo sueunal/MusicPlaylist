@@ -78,22 +78,22 @@ struct SuhaTabView: View {
                                 Image(item.PlaylistImageName)
                                     .resizable()
                                     .frame(width: 50,height: 50)
-                                Button{
-                                    
-                                }
+                            Button{
+                                
+                            }
                             label:{
                                 Text(item.PlaylistName)
                                     .foregroundColor(.black)
                                     .font(.system(size:15))
                                     .frame(height:50)
+                                
                             }
-                            .listRowSeparatorTint(.white)
+                                
+                            .listRowBackground(Color(.white))
+                                //리스트 raw 백그라운드 색 지정 이미지도 가능
                             }
-                            .listRowBackground(Color(.gray))
-                            //리스트 raw 백그라운드 색 지정 이미지도 가능
-                        }
                     }
-                      .scrollContentBackground(.hidden)
+                      .scrollContentBackground(.hidden) //리스트
                       .background(Color("BackgroundColor").ignoresSafeArea(.all)) //리스트 백그라운드 색 지정 이미지도 가능
                       .listStyle(.inset) // 리스트 스타일 변경 inset, automatic, plan 등 다양하게 존재.
                 }
