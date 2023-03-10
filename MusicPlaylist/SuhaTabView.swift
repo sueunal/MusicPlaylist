@@ -4,7 +4,6 @@
 //
 //  Created by sueun kim on 2023/03/02.
 //
-
 import SwiftUI
 import AVKit
 
@@ -69,37 +68,40 @@ struct SuhaTabView: View {
         }
     }
     @State var playlist : [PlaylistType] = [.song0,.song1, .song2, .song3, .song4,.song5,.song6,.song7,.song8,.song9,.song10, .song11]
+    @State var PlayMusicImage : Image = Image("Vizzen & Protolizard - Heaven Knows _artwork-440x440")
+    @State var PlayMusicName : String = ""
     var body: some View {
-            VStack{
-                Section{
+        VStack{
+            Section{
+                NavigationView {
                     List{
                         ForEach(playlist, id:\.self){ item in
                             HStack{
                                 Image(item.PlaylistImageName)
                                     .resizable()
                                     .frame(width: 50,height: 50)
-                            Button{
-                                
+                                NavigationLink{
+                                    MusicPlayView(PlayMusicImage:$PlayMusicImage, PlayMusicName: $PlayMusicName)
+                                }label:{
+                                    Text(item.PlaylistName)
+                                        .foregroundColor(.black)
+                                        .font(.system(size:15))
+                                        .frame(height:50)
+                                }
                             }
-                            label:{
-                                Text(item.PlaylistName)
-                                    .foregroundColor(.black)
-                                    .font(.system(size:15))
-                                    .frame(height:50)
-                                
-                            }
-                                
-                            .listRowBackground(Color(.white))
-                                //리스트 raw 백그라운드 색 지정 이미지도 가능
-                            }
+                        }
                     }
-                      .scrollContentBackground(.hidden) //리스트
-                      .background(Color("BackgroundColor").ignoresSafeArea(.all)) //리스트 백그라운드 색 지정 이미지도 가능
-                      .listStyle(.inset) // 리스트 스타일 변경 inset, automatic, plan 등 다양하게 존재.
+                    .background(Image("samuel-543091-unsplash"))
+                    //리스트 백그라운드 색 지정 이미지도 가능
                 }
+                .listStyle(.insetGrouped)
+                    //리스트 raw 백그라운드 색 지정 이미지도 가능
             }
+            .scrollContentBackground(.hidden) //리스트
+            // 리스트 스타일 변경 inset, automatic, plan 등 다양하게 존재.
         }
     }
+}
 struct SuhaTabView_Previews: PreviewProvider {
     static var previews: some View {
         SuhaTabView()
