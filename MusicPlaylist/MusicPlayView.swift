@@ -4,25 +4,37 @@
 //
 //  Created by sueun kim on 2023/03/05.
 //
-
-import SwiftUI
 import AVKit
-import AVFoundation
+import SwiftUI
 
+struct MyPlayerView: UIViewControllerRepresentable {
+    let player = AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "Andromedik & Murdock - Light (feat. Dualistic) [NCS Release]", ofType: "mp3")!))
+    func makeUIViewController(context: Context) -> AVPlayerViewController {
+        let playerViewController = AVPlayerViewController()
+        playerViewController.player = player
+        return playerViewController
+    }
+
+    func updateUIViewController(_ uiViewController: AVPlayerViewController, context: Context) {
+        // Update any properties of the view controller here if needed.
+    }
+}
 struct MusicPlayView: View {
     @State var audioPlayer: AVAudioPlayer!
     @State var PlayPause : Bool = true
     
-    @Binding var PlayMusicImage : Image
-    @Binding var PlayMusicName : String
+    var selection : Int
+    var playlist : [PlaylistType]
+    
     var body: some View {
         ZStack{
-            PlayMusicImage
+            Image(playlist[selection].PlaylistImageName)
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .ignoresSafeArea(.all)
+                .blur(radius: 100)
             VStack{
-                Image("Andromedik & Murdock - Light (feat. Dualistic) _artwork-440x440")
+                Image(playlist[selection].PlaylistImageName)
                     .resizable()
                     .frame(width:250,height: 250)
                     .foregroundColor(.white)
@@ -32,7 +44,9 @@ struct MusicPlayView: View {
                     .shadow(color: .white, radius: 10)
                     .padding(.top,50)
                 Spacer()
-                ProgressView(value:100)
+                Text(playlist[selection].PlaylistName)
+                    .foregroundColor(.white)
+                    .frame(width: 300,height: 100)
                 Spacer()
                 HStack{
                     Image(systemName: "backward.end.fill")
@@ -43,13 +57,13 @@ struct MusicPlayView: View {
                     Button{
                         PlayPause.toggle()
                     }
-                label:{
-                    Image(systemName: PlayPause ?  "play.fill" : "pause")
-                        .resizable()
-                        .frame(width:50 ,height:50)
-                        .foregroundColor(.white)
-                        .aspectRatio(contentMode: .fit)
-                }
+                    label:{
+                        Image(systemName: PlayPause ?  "play.fill" : "pause")
+                            .resizable()
+                            .frame(width:50 ,height:50)
+                            .foregroundColor(.white)
+                            .aspectRatio(contentMode: .fit)
+                    }
                     Image(systemName: "forward.end.fill")
                         .resizable()
                         .frame(width:50 ,height:50)
