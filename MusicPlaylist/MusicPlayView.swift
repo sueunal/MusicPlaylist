@@ -21,40 +21,49 @@ struct MusicPlayView: View {
                 .ignoresSafeArea(.all)
                 .blur(radius: 100)
             VStack {
-                        Image(playlist[selection].PlaylistImageName)
-                            .resizable()
-                            .frame(width:250,height: 250)
-                            .foregroundColor(.white)
-                            .aspectRatio(contentMode: .fill)
-                            .background(Color(.black))
-                            .cornerRadius(150/2)
-                            .shadow(color: .white, radius: 10)
-                            .padding(.top,50)
-                        Text(playlist[selection].PlaylistName)
-                            .foregroundColor(.white)
-                            .frame(width: 300,height: 100)
-                        Spacer()
+                Image(playlist[selection].PlaylistImageName)
+                    .resizable()
+                    .frame(width:250,height: 250)
+                    .foregroundColor(.white)
+                    .aspectRatio(contentMode: .fill)
+                    .background(Color(.black))
+                    .cornerRadius(150/2)
+                    .shadow(color: .white, radius: 10)
+                    .padding(.top,50)
+                Spacer()
+                Text(playlist[selection].PlaylistName)
+                    .foregroundColor(.white)
+                    .frame(width: 300,height: 100)
+                Spacer()
                 HStack{
-                        Button(action: {
-                            self.audioPlayer.play()
-                        }) {
-                            Image(systemName: "play.fill")
-                                .resizable()
-                                .frame(width: 80, height: 80)
-                                .aspectRatio(contentMode: .fit)
-                                .foregroundColor(.black)
-                        }
-                        Button(action: {
+                    Image(systemName: "backward.end")
+                            .resizable()
+                            .frame(width: 50, height: 50)
+                            .aspectRatio(contentMode: .fit)
+                            .foregroundColor(.black)
+                            .padding(.trailing,50)
+                    Button(action: {
+                        PlayPause.toggle()
+                        if PlayPause {
                             self.audioPlayer.pause()
-                        }) {
-                            Image(systemName: "pause.circle.fill")
-                                .resizable()
-                                .frame(width: 80, height: 80)
-                                .aspectRatio(contentMode: .fit)
-                                .foregroundColor(.black)
+                        }else {
+                            self.audioPlayer.play()
                         }
+                    }) {
+                        Image(systemName: PlayPause ? "play" :"pause")
+                            .resizable()
+                            .frame(width: 50, height: 50)
+                            .aspectRatio(contentMode: .fit)
+                            .foregroundColor(.black)
                     }
+                    Image(systemName: "forward.end")
+                            .resizable()
+                            .frame(width: 50, height: 50)
+                            .aspectRatio(contentMode: .fit)
+                            .foregroundColor(.black)
+                            .padding(.leading,50)
                 }
+                Spacer()
                 .onAppear {
                     let sound = Bundle.main.path(forResource: playlist[selection].PlaylistName, ofType: "mp3")
                     self.audioPlayer = try! AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
@@ -63,3 +72,4 @@ struct MusicPlayView: View {
             Spacer()
         }
     }
+}
