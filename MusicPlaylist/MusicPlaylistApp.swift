@@ -4,7 +4,6 @@
 //
 //  Created by sueun kim on 2023/03/01.
 //
-
 import SwiftUI
 
 @main

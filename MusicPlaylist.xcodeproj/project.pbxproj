@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2CD76D1729C0B07000BF0400 /* Andromedik & Murdock - Light (feat. Dualistic) [NCS Release].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2CD76D1629C0B07000BF0400 /* Andromedik & Murdock - Light (feat. Dualistic) [NCS Release].mp3 */; };
+		2CD76D2329C0B37300BF0400 /* Arc North - Symphony (feat. Donna Tella) [NCS Release].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2CD76D1829C0B37300BF0400 /* Arc North - Symphony (feat. Donna Tella) [NCS Release].mp3 */; };
+		2CD76D2429C0B37300BF0400 /* Arcando - In My Head (feat. Britt Lari) [NCS Release].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2CD76D1929C0B37300BF0400 /* Arcando - In My Head (feat. Britt Lari) [NCS Release].mp3 */; };
+		2CD76D2529C0B37300BF0400 /* Vizzen & Protolizard - Heaven Knows [NCS Release].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2CD76D1A29C0B37300BF0400 /* Vizzen & Protolizard - Heaven Knows [NCS Release].mp3 */; };
+		2CD76D2629C0B37300BF0400 /* Egzod, Maestro Chives, Neoni - Royalty [NCS Release].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2CD76D1B29C0B37300BF0400 /* Egzod, Maestro Chives, Neoni - Royalty [NCS Release].mp3 */; };
+		2CD76D2729C0B37300BF0400 /* PLEEG - Spirit [NCS Release].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2CD76D1C29C0B37300BF0400 /* PLEEG - Spirit [NCS Release].mp3 */; };
+		2CD76D2829C0B37300BF0400 /* N3WPORT x Britt Lari - Paradise [NCS Release].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2CD76D1D29C0B37300BF0400 /* N3WPORT x Britt Lari - Paradise [NCS Release].mp3 */; };
+		2CD76D2929C0B37300BF0400 /* Sam Ourt, AKIAL & Srikar - Escape (Juan Dileju & Sam Ourt VIP Mix) [NCS Release].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2CD76D1E29C0B37300BF0400 /* Sam Ourt, AKIAL & Srikar - Escape (Juan Dileju & Sam Ourt VIP Mix) [NCS Release].mp3 */; };
+		2CD76D2A29C0B37300BF0400 /* Sharks - Shiver [NCS Release].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2CD76D1F29C0B37300BF0400 /* Sharks - Shiver [NCS Release].mp3 */; };
+		2CD76D2B29C0B37300BF0400 /* Jack Shore & Tollef - Dreaming of Me (feat. Jaime Deraz) [NCS Release].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2CD76D2029C0B37300BF0400 /* Jack Shore & Tollef - Dreaming of Me (feat. Jaime Deraz) [NCS Release].mp3 */; };
+		2CD76D2C29C0B37300BF0400 /* Rival - Falling (with CRVN) [NCS Release].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2CD76D2129C0B37300BF0400 /* Rival - Falling (with CRVN) [NCS Release].mp3 */; };
+		2CD76D2D29C0B37300BF0400 /* ROY KNOX & CRVN - The Other Side [NCS Release].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2CD76D2229C0B37300BF0400 /* ROY KNOX & CRVN - The Other Side [NCS Release].mp3 */; };
 		2CE878B729AF68C30078E233 /* MusicPlaylistApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE878B629AF68C30078E233 /* MusicPlaylistApp.swift */; };
 		2CE878B929AF68C30078E233 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE878B829AF68C30078E233 /* ContentView.swift */; };
 		2CE878BB29AF68C40078E233 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CE878BA29AF68C40078E233 /* Assets.xcassets */; };
@@ -37,6 +49,18 @@
 
 /* Begin PBXFileReference section */
 		2C48B97829BC40F2001A273F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2CD76D1629C0B07000BF0400 /* Andromedik & Murdock - Light (feat. Dualistic) [NCS Release].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Andromedik & Murdock - Light (feat. Dualistic) [NCS Release].mp3"; path = "../../../Downloads/MusicPlaylist_samples/MusicSamples_Converted/Andromedik & Murdock - Light (feat. Dualistic) [NCS Release].mp3"; sourceTree = "<group>"; };
+		2CD76D1829C0B37300BF0400 /* Arc North - Symphony (feat. Donna Tella) [NCS Release].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Arc North - Symphony (feat. Donna Tella) [NCS Release].mp3"; path = "../../../Downloads/MusicPlaylist_samples/MusicSamples_Converted/Arc North - Symphony (feat. Donna Tella) [NCS Release].mp3"; sourceTree = "<group>"; };
+		2CD76D1929C0B37300BF0400 /* Arcando - In My Head (feat. Britt Lari) [NCS Release].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Arcando - In My Head (feat. Britt Lari) [NCS Release].mp3"; path = "../../../Downloads/MusicPlaylist_samples/MusicSamples_Converted/Arcando - In My Head (feat. Britt Lari) [NCS Release].mp3"; sourceTree = "<group>"; };
+		2CD76D1A29C0B37300BF0400 /* Vizzen & Protolizard - Heaven Knows [NCS Release].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Vizzen & Protolizard - Heaven Knows [NCS Release].mp3"; path = "../../../Downloads/MusicPlaylist_samples/MusicSamples_Converted/Vizzen & Protolizard - Heaven Knows [NCS Release].mp3"; sourceTree = "<group>"; };
+		2CD76D1B29C0B37300BF0400 /* Egzod, Maestro Chives, Neoni - Royalty [NCS Release].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Egzod, Maestro Chives, Neoni - Royalty [NCS Release].mp3"; path = "../../../Downloads/MusicPlaylist_samples/MusicSamples_Converted/Egzod, Maestro Chives, Neoni - Royalty [NCS Release].mp3"; sourceTree = "<group>"; };
+		2CD76D1C29C0B37300BF0400 /* PLEEG - Spirit [NCS Release].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "PLEEG - Spirit [NCS Release].mp3"; path = "../../../Downloads/MusicPlaylist_samples/MusicSamples_Converted/PLEEG - Spirit [NCS Release].mp3"; sourceTree = "<group>"; };
+		2CD76D1D29C0B37300BF0400 /* N3WPORT x Britt Lari - Paradise [NCS Release].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "N3WPORT x Britt Lari - Paradise [NCS Release].mp3"; path = "../../../Downloads/MusicPlaylist_samples/MusicSamples_Converted/N3WPORT x Britt Lari - Paradise [NCS Release].mp3"; sourceTree = "<group>"; };
+		2CD76D1E29C0B37300BF0400 /* Sam Ourt, AKIAL & Srikar - Escape (Juan Dileju & Sam Ourt VIP Mix) [NCS Release].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Sam Ourt, AKIAL & Srikar - Escape (Juan Dileju & Sam Ourt VIP Mix) [NCS Release].mp3"; path = "../../../Downloads/MusicPlaylist_samples/MusicSamples_Converted/Sam Ourt, AKIAL & Srikar - Escape (Juan Dileju & Sam Ourt VIP Mix) [NCS Release].mp3"; sourceTree = "<group>"; };
+		2CD76D1F29C0B37300BF0400 /* Sharks - Shiver [NCS Release].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Sharks - Shiver [NCS Release].mp3"; path = "../../../Downloads/MusicPlaylist_samples/MusicSamples_Converted/Sharks - Shiver [NCS Release].mp3"; sourceTree = "<group>"; };
+		2CD76D2029C0B37300BF0400 /* Jack Shore & Tollef - Dreaming of Me (feat. Jaime Deraz) [NCS Release].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Jack Shore & Tollef - Dreaming of Me (feat. Jaime Deraz) [NCS Release].mp3"; path = "../../../Downloads/MusicPlaylist_samples/MusicSamples_Converted/Jack Shore & Tollef - Dreaming of Me (feat. Jaime Deraz) [NCS Release].mp3"; sourceTree = "<group>"; };
+		2CD76D2129C0B37300BF0400 /* Rival - Falling (with CRVN) [NCS Release].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Rival - Falling (with CRVN) [NCS Release].mp3"; path = "../../../Downloads/MusicPlaylist_samples/MusicSamples_Converted/Rival - Falling (with CRVN) [NCS Release].mp3"; sourceTree = "<group>"; };
+		2CD76D2229C0B37300BF0400 /* ROY KNOX & CRVN - The Other Side [NCS Release].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "ROY KNOX & CRVN - The Other Side [NCS Release].mp3"; path = "../../../Downloads/MusicPlaylist_samples/MusicSamples_Converted/ROY KNOX & CRVN - The Other Side [NCS Release].mp3"; sourceTree = "<group>"; };
 		2CE878B329AF68C30078E233 /* MusicPlaylist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicPlaylist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CE878B629AF68C30078E233 /* MusicPlaylistApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlaylistApp.swift; sourceTree = "<group>"; };
 		2CE878B829AF68C30078E233 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -100,6 +124,18 @@
 			isa = PBXGroup;
 			children = (
 				2C48B97829BC40F2001A273F /* Info.plist */,
+				2CD76D1629C0B07000BF0400 /* Andromedik & Murdock - Light (feat. Dualistic) [NCS Release].mp3 */,
+				2CD76D1829C0B37300BF0400 /* Arc North - Symphony (feat. Donna Tella) [NCS Release].mp3 */,
+				2CD76D1929C0B37300BF0400 /* Arcando - In My Head (feat. Britt Lari) [NCS Release].mp3 */,
+				2CD76D1B29C0B37300BF0400 /* Egzod, Maestro Chives, Neoni - Royalty [NCS Release].mp3 */,
+				2CD76D2029C0B37300BF0400 /* Jack Shore & Tollef - Dreaming of Me (feat. Jaime Deraz) [NCS Release].mp3 */,
+				2CD76D1D29C0B37300BF0400 /* N3WPORT x Britt Lari - Paradise [NCS Release].mp3 */,
+				2CD76D1C29C0B37300BF0400 /* PLEEG - Spirit [NCS Release].mp3 */,
+				2CD76D2129C0B37300BF0400 /* Rival - Falling (with CRVN) [NCS Release].mp3 */,
+				2CD76D2229C0B37300BF0400 /* ROY KNOX & CRVN - The Other Side [NCS Release].mp3 */,
+				2CD76D1E29C0B37300BF0400 /* Sam Ourt, AKIAL & Srikar - Escape (Juan Dileju & Sam Ourt VIP Mix) [NCS Release].mp3 */,
+				2CD76D1F29C0B37300BF0400 /* Sharks - Shiver [NCS Release].mp3 */,
+				2CD76D1A29C0B37300BF0400 /* Vizzen & Protolizard - Heaven Knows [NCS Release].mp3 */,
 				2CE878B629AF68C30078E233 /* MusicPlaylistApp.swift */,
 				2CE878B829AF68C30078E233 /* ContentView.swift */,
 				2CE878E029B093350078E233 /* SuhaTabView.swift */,
@@ -239,8 +275,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CD76D2729C0B37300BF0400 /* PLEEG - Spirit [NCS Release].mp3 in Resources */,
+				2CD76D2D29C0B37300BF0400 /* ROY KNOX & CRVN - The Other Side [NCS Release].mp3 in Resources */,
+				2CD76D2B29C0B37300BF0400 /* Jack Shore & Tollef - Dreaming of Me (feat. Jaime Deraz) [NCS Release].mp3 in Resources */,
+				2CD76D2529C0B37300BF0400 /* Vizzen & Protolizard - Heaven Knows [NCS Release].mp3 in Resources */,
+				2CD76D2A29C0B37300BF0400 /* Sharks - Shiver [NCS Release].mp3 in Resources */,
+				2CD76D1729C0B07000BF0400 /* Andromedik & Murdock - Light (feat. Dualistic) [NCS Release].mp3 in Resources */,
+				2CD76D2C29C0B37300BF0400 /* Rival - Falling (with CRVN) [NCS Release].mp3 in Resources */,
+				2CD76D2429C0B37300BF0400 /* Arcando - In My Head (feat. Britt Lari) [NCS Release].mp3 in Resources */,
+				2CD76D2929C0B37300BF0400 /* Sam Ourt, AKIAL & Srikar - Escape (Juan Dileju & Sam Ourt VIP Mix) [NCS Release].mp3 in Resources */,
 				2CE878BE29AF68C40078E233 /* Preview Assets.xcassets in Resources */,
+				2CD76D2829C0B37300BF0400 /* N3WPORT x Britt Lari - Paradise [NCS Release].mp3 in Resources */,
+				2CD76D2629C0B37300BF0400 /* Egzod, Maestro Chives, Neoni - Royalty [NCS Release].mp3 in Resources */,
 				2CE878BB29AF68C40078E233 /* Assets.xcassets in Resources */,
+				2CD76D2329C0B37300BF0400 /* Arc North - Symphony (feat. Donna Tella) [NCS Release].mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
