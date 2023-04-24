@@ -71,7 +71,7 @@ enum PlaylistType: String, CaseIterable {
         @State var playlist : [PlaylistType] = [.song0, .song1, .song2, .song3, .song4, .song5,.song6,.song7,.song8,.song9,.song10,.song11]
         @State var PlayMusicImage : Image = Image("Vizzen & Protolizard - Heaven Knows _artwork-440x440")
         @State var PlayMusicName : String = ""
-        
+       
         var body: some View {
             VStack{
                 Section{

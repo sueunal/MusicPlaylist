@@ -10,6 +10,7 @@ import SwiftUI
 struct MusicPlayView: View {
     @State var audioPlayer: AVAudioPlayer!
     @State var PlayPause : Bool = true
+    @State var ProgressValue : Int = 10
     
     var selection : Int
     var playlist : [PlaylistType]
@@ -36,40 +37,53 @@ struct MusicPlayView: View {
                     .frame(width: 300,height: 100)
                 Spacer()
                 HStack{
-                    Image(systemName: "backward.end")
+                    Text("00:00")
+                        .font(.caption)
+                        .foregroundColor(.black)
+                        .font(.system(size: 50))
+                }
+                Spacer()
+                HStack{
+                    Button{
+                        
+                    }label:{
+                        Image(systemName: "backward.end")
                             .resizable()
-                            .frame(width: 50, height: 50)
+                            .frame(width: 30, height: 30)
                             .aspectRatio(contentMode: .fit)
                             .foregroundColor(.black)
                             .padding(.trailing,50)
-                    Button(action: {
-                        PlayPause.toggle()
-                        if PlayPause {
-                            self.audioPlayer.pause()
-                        }else {
-                            self.audioPlayer.play()
-                        }
-                    }) {
-                        Image(systemName: PlayPause ? "play" :"pause")
+                    }
+                    Button{
+                       MusicPlayPause( IsPlay: PlayPause)
+                    }label: {
+                        Image(systemName: PlayPause ? "play.circle" :"pause.circle")
                             .resizable()
                             .frame(width: 50, height: 50)
                             .aspectRatio(contentMode: .fit)
                             .foregroundColor(.black)
                     }
-                    Image(systemName: "forward.end")
+                    Button{
+                    }label: {
+                        Image(systemName: "forward.end")
                             .resizable()
-                            .frame(width: 50, height: 50)
+                            .frame(width: 30, height: 30)
                             .aspectRatio(contentMode: .fit)
                             .foregroundColor(.black)
                             .padding(.leading,50)
+                    }
                 }
                 Spacer()
-                .onAppear {
-                    let sound = Bundle.main.path(forResource: playlist[selection].PlaylistName, ofType: "mp3")
-                    self.audioPlayer = try! AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
-                }
             }
             Spacer()
+        }
+    }
+    func MusicPlayPause(IsPlay : Bool){
+        if IsPlay{
+            self.audioPlayer.play()
+        }
+        else{
+            self.audioPlayer.stop()
         }
     }
 }
