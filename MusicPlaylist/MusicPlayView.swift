@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MusicPlayView: View {
     @State var audioPlayer: AVAudioPlayer!
-    @State var PlayPause : Bool = true
+    @State var PlayPause : Bool = false
     @State var ProgressValue : Int = 10
     
     var selection : Int
@@ -37,11 +37,15 @@ struct MusicPlayView: View {
                     .frame(width: 300,height: 100)
                 Spacer()
                 HStack{
-                    Text("00:00")
-                        .font(.caption)
+                    ProgressView(value: 1,total: 2.23)
                         .foregroundColor(.black)
                         .font(.system(size: 50))
+                        .cornerRadius(10)
+                        .padding()
                 }
+                Divider()
+                    .background(.black)
+                
                 Spacer()
                 HStack{
                     Button{
@@ -55,11 +59,12 @@ struct MusicPlayView: View {
                             .padding(.trailing,50)
                     }
                     Button{
-                       MusicPlayPause( IsPlay: PlayPause)
+                        PlayPause.toggle()
+                        MusicPlayPause( IsPlay: PlayPause)
                     }label: {
-                        Image(systemName: PlayPause ? "play.circle" :"pause.circle")
+                        Image(systemName: PlayPause ? "pause.circle" :"play.circle")
                             .resizable()
-                            .frame(width: 50, height: 50)
+                            .frame(width: 60, height: 60)
                             .aspectRatio(contentMode: .fit)
                             .foregroundColor(.black)
                     }
@@ -74,6 +79,10 @@ struct MusicPlayView: View {
                     }
                 }
                 Spacer()
+            }
+            .onAppear {
+                let sound = Bundle.main.path(forResource: playlist[selection].PlaylistName, ofType: "mp3")
+                self.audioPlayer = try! AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
             }
             Spacer()
         }
